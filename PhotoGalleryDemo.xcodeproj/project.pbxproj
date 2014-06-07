@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971A143D19432BB800847D76 /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A143C19432BB800847D76 /* PhotoGridViewController.swift */; };
+		971A1440194343F000847D76 /* PhotoGalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A143F194343F000847D76 /* PhotoGalleryDataSource.swift */; };
+		971A14451943514D00847D76 /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A14441943514D00847D76 /* PhotoGridCell.swift */; };
+		971A14491943540200847D76 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A14481943540200847D76 /* PhotoItem.swift */; };
+		971A144F1943570800847D76 /* beach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A144B1943570800847D76 /* beach.jpeg */; };
+		971A14501943570800847D76 /* evening.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A144C1943570800847D76 /* evening.jpeg */; };
+		971A14511943570800847D76 /* sky.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A144D1943570800847D76 /* sky.jpeg */; };
+		971A14521943570800847D76 /* sky2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A144E1943570800847D76 /* sky2.jpeg */; };
+		971A14541943583800847D76 /* SimplePhotoGalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A14531943583800847D76 /* SimplePhotoGalleryDataSource.swift */; };
+		971A145719437E8E00847D76 /* beach2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A145619437E8E00847D76 /* beach2.jpeg */; };
 		9744747B19432AD300718D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9744747A19432AD300718D0F /* AppDelegate.swift */; };
 		9744747D19432AD300718D0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9744747C19432AD300718D0F /* ViewController.swift */; };
 		9744748019432AD300718D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9744747E19432AD300718D0F /* Main.storyboard */; };
@@ -14,6 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		971A143C19432BB800847D76 /* PhotoGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridViewController.swift; sourceTree = "<group>"; };
+		971A143F194343F000847D76 /* PhotoGalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryDataSource.swift; sourceTree = "<group>"; };
+		971A14441943514D00847D76 /* PhotoGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
+		971A14481943540200847D76 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		971A144B1943570800847D76 /* beach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach.jpeg; sourceTree = "<group>"; };
+		971A144C1943570800847D76 /* evening.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = evening.jpeg; sourceTree = "<group>"; };
+		971A144D1943570800847D76 /* sky.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpeg; sourceTree = "<group>"; };
+		971A144E1943570800847D76 /* sky2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky2.jpeg; sourceTree = "<group>"; };
+		971A14531943583800847D76 /* SimplePhotoGalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePhotoGalleryDataSource.swift; sourceTree = "<group>"; };
+		971A145619437E8E00847D76 /* beach2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach2.jpeg; sourceTree = "<group>"; };
 		9744747519432AD300718D0F /* PhotoGalleryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGalleryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9744747919432AD300718D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9744747A19432AD300718D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		971A144A194356F800847D76 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				971A144B1943570800847D76 /* beach.jpeg */,
+				971A145619437E8E00847D76 /* beach2.jpeg */,
+				971A144C1943570800847D76 /* evening.jpeg */,
+				971A144D1943570800847D76 /* sky.jpeg */,
+				971A144E1943570800847D76 /* sky2.jpeg */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
 		9744746C19432AD300718D0F = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +85,7 @@
 		9744747719432AD300718D0F /* PhotoGalleryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				971A144A194356F800847D76 /* img */,
 				9744747A19432AD300718D0F /* AppDelegate.swift */,
 				9744747C19432AD300718D0F /* ViewController.swift */,
 				9744747E19432AD300718D0F /* Main.storyboard */,
@@ -73,6 +106,11 @@
 		9744749719432B1E00718D0F /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				971A143C19432BB800847D76 /* PhotoGridViewController.swift */,
+				971A143F194343F000847D76 /* PhotoGalleryDataSource.swift */,
+				971A14441943514D00847D76 /* PhotoGridCell.swift */,
+				971A14481943540200847D76 /* PhotoItem.swift */,
+				971A14531943583800847D76 /* SimplePhotoGalleryDataSource.swift */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -134,7 +172,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971A14511943570800847D76 /* sky.jpeg in Resources */,
+				971A14501943570800847D76 /* evening.jpeg in Resources */,
+				971A144F1943570800847D76 /* beach.jpeg in Resources */,
 				9744748019432AD300718D0F /* Main.storyboard in Resources */,
+				971A145719437E8E00847D76 /* beach2.jpeg in Resources */,
+				971A14521943570800847D76 /* sky2.jpeg in Resources */,
 				9744748219432AD300718D0F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971A14491943540200847D76 /* PhotoItem.swift in Sources */,
+				971A1440194343F000847D76 /* PhotoGalleryDataSource.swift in Sources */,
 				9744747D19432AD300718D0F /* ViewController.swift in Sources */,
 				9744747B19432AD300718D0F /* AppDelegate.swift in Sources */,
+				971A143D19432BB800847D76 /* PhotoGridViewController.swift in Sources */,
+				971A14541943583800847D76 /* SimplePhotoGalleryDataSource.swift in Sources */,
+				971A14451943514D00847D76 /* PhotoGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +333,7 @@
 				9744749319432AD300718D0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
