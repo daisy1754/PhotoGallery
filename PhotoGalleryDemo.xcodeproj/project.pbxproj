@@ -8,44 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		3E8ADBE4E1DE429EBE67AB71 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9E134DE19B41F7B1D3EBB1 /* libPods.a */; };
-		971A143D19432BB800847D76 /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A143C19432BB800847D76 /* PhotoGridViewController.swift */; };
-		971A1440194343F000847D76 /* PhotoGalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A143F194343F000847D76 /* PhotoGalleryDataSource.swift */; };
-		971A14451943514D00847D76 /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A14441943514D00847D76 /* PhotoGridCell.swift */; };
-		971A14491943540200847D76 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A14481943540200847D76 /* PhotoItem.swift */; };
-		971A144F1943570800847D76 /* beach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A144B1943570800847D76 /* beach.jpeg */; };
-		971A14501943570800847D76 /* evening.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A144C1943570800847D76 /* evening.jpeg */; };
-		971A14511943570800847D76 /* sky.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A144D1943570800847D76 /* sky.jpeg */; };
-		971A14521943570800847D76 /* sky2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A144E1943570800847D76 /* sky2.jpeg */; };
-		971A14541943583800847D76 /* SimplePhotoGalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A14531943583800847D76 /* SimplePhotoGalleryDataSource.swift */; };
-		971A145719437E8E00847D76 /* beach2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 971A145619437E8E00847D76 /* beach2.jpeg */; };
 		9744747B19432AD300718D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9744747A19432AD300718D0F /* AppDelegate.swift */; };
 		9744747D19432AD300718D0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9744747C19432AD300718D0F /* ViewController.swift */; };
 		9744748019432AD300718D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9744747E19432AD300718D0F /* Main.storyboard */; };
 		9744748219432AD300718D0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9744748119432AD300718D0F /* Images.xcassets */; };
-		97E6BA9F19443F4300542BFD /* PhotoScrollPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E6BA9E19443F4300542BFD /* PhotoScrollPagerViewController.swift */; };
-		97E6BAA119446C7600542BFD /* FullScreenPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E6BAA019446C7600542BFD /* FullScreenPhotoView.swift */; };
+		97CE768A1944A5FE00B26CB8 /* FullScreenPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE76821944A5FE00B26CB8 /* FullScreenPhotoView.swift */; };
+		97CE768B1944A5FE00B26CB8 /* PhotoGalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE76841944A5FE00B26CB8 /* PhotoGalleryDataSource.swift */; };
+		97CE768C1944A5FE00B26CB8 /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE76851944A5FE00B26CB8 /* PhotoGridCell.swift */; };
+		97CE768D1944A5FE00B26CB8 /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE76861944A5FE00B26CB8 /* PhotoGridViewController.swift */; };
+		97CE768E1944A5FE00B26CB8 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE76871944A5FE00B26CB8 /* PhotoItem.swift */; };
+		97CE768F1944A5FE00B26CB8 /* PhotoScrollPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE76881944A5FE00B26CB8 /* PhotoScrollPagerViewController.swift */; };
+		97CE76901944A5FE00B26CB8 /* SimplePhotoGalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE76891944A5FE00B26CB8 /* SimplePhotoGalleryDataSource.swift */; };
+		97CE76961944A63D00B26CB8 /* beach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97CE76911944A63D00B26CB8 /* beach.jpeg */; };
+		97CE76971944A63D00B26CB8 /* beach2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97CE76921944A63D00B26CB8 /* beach2.jpeg */; };
+		97CE76981944A63D00B26CB8 /* evening.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97CE76931944A63D00B26CB8 /* evening.jpeg */; };
+		97CE76991944A63D00B26CB8 /* sky.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97CE76941944A63D00B26CB8 /* sky.jpeg */; };
+		97CE769A1944A63D00B26CB8 /* sky2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97CE76951944A63D00B26CB8 /* sky2.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9718668C194385420055C1F9 /* objc-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-bridge.h"; sourceTree = "<group>"; };
-		971A143C19432BB800847D76 /* PhotoGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridViewController.swift; sourceTree = "<group>"; };
-		971A143F194343F000847D76 /* PhotoGalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryDataSource.swift; sourceTree = "<group>"; };
-		971A14441943514D00847D76 /* PhotoGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
-		971A14481943540200847D76 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
-		971A144B1943570800847D76 /* beach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach.jpeg; sourceTree = "<group>"; };
-		971A144C1943570800847D76 /* evening.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = evening.jpeg; sourceTree = "<group>"; };
-		971A144D1943570800847D76 /* sky.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpeg; sourceTree = "<group>"; };
-		971A144E1943570800847D76 /* sky2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky2.jpeg; sourceTree = "<group>"; };
-		971A14531943583800847D76 /* SimplePhotoGalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePhotoGalleryDataSource.swift; sourceTree = "<group>"; };
-		971A145619437E8E00847D76 /* beach2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach2.jpeg; sourceTree = "<group>"; };
 		9744747519432AD300718D0F /* PhotoGalleryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGalleryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9744747919432AD300718D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9744747A19432AD300718D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9744747C19432AD300718D0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9744747F19432AD300718D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9744748119432AD300718D0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		97E6BA9E19443F4300542BFD /* PhotoScrollPagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScrollPagerViewController.swift; sourceTree = "<group>"; };
-		97E6BAA019446C7600542BFD /* FullScreenPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoView.swift; sourceTree = "<group>"; };
+		97CE76821944A5FE00B26CB8 /* FullScreenPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FullScreenPhotoView.swift; path = PhotoGallery/FullScreenPhotoView.swift; sourceTree = "<group>"; };
+		97CE76831944A5FE00B26CB8 /* objc-bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-bridge.h"; path = "PhotoGallery/objc-bridge.h"; sourceTree = "<group>"; };
+		97CE76841944A5FE00B26CB8 /* PhotoGalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoGalleryDataSource.swift; path = PhotoGallery/PhotoGalleryDataSource.swift; sourceTree = "<group>"; };
+		97CE76851944A5FE00B26CB8 /* PhotoGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoGridCell.swift; path = PhotoGallery/PhotoGridCell.swift; sourceTree = "<group>"; };
+		97CE76861944A5FE00B26CB8 /* PhotoGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoGridViewController.swift; path = PhotoGallery/PhotoGridViewController.swift; sourceTree = "<group>"; };
+		97CE76871944A5FE00B26CB8 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoItem.swift; path = PhotoGallery/PhotoItem.swift; sourceTree = "<group>"; };
+		97CE76881944A5FE00B26CB8 /* PhotoScrollPagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoScrollPagerViewController.swift; path = PhotoGallery/PhotoScrollPagerViewController.swift; sourceTree = "<group>"; };
+		97CE76891944A5FE00B26CB8 /* SimplePhotoGalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimplePhotoGalleryDataSource.swift; path = PhotoGallery/SimplePhotoGalleryDataSource.swift; sourceTree = "<group>"; };
+		97CE76911944A63D00B26CB8 /* beach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = beach.jpeg; path = img/beach.jpeg; sourceTree = "<group>"; };
+		97CE76921944A63D00B26CB8 /* beach2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = beach2.jpeg; path = img/beach2.jpeg; sourceTree = "<group>"; };
+		97CE76931944A63D00B26CB8 /* evening.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = evening.jpeg; path = img/evening.jpeg; sourceTree = "<group>"; };
+		97CE76941944A63D00B26CB8 /* sky.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sky.jpeg; path = img/sky.jpeg; sourceTree = "<group>"; };
+		97CE76951944A63D00B26CB8 /* sky2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sky2.jpeg; path = img/sky2.jpeg; sourceTree = "<group>"; };
 		9FA60B6B4C364B57B48E2A74 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CC9E134DE19B41F7B1D3EBB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,11 +73,11 @@
 		971A144A194356F800847D76 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				971A144B1943570800847D76 /* beach.jpeg */,
-				971A145619437E8E00847D76 /* beach2.jpeg */,
-				971A144C1943570800847D76 /* evening.jpeg */,
-				971A144D1943570800847D76 /* sky.jpeg */,
-				971A144E1943570800847D76 /* sky2.jpeg */,
+				97CE76911944A63D00B26CB8 /* beach.jpeg */,
+				97CE76921944A63D00B26CB8 /* beach2.jpeg */,
+				97CE76931944A63D00B26CB8 /* evening.jpeg */,
+				97CE76941944A63D00B26CB8 /* sky.jpeg */,
+				97CE76951944A63D00B26CB8 /* sky2.jpeg */,
 			);
 			name = img;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9744747719432AD300718D0F /* PhotoGalleryDemo */,
-				9744749719432B1E00718D0F /* lib */,
+				9744749719432B1E00718D0F /* PhotoGallery */,
 				9744747619432AD300718D0F /* Products */,
 				9FA60B6B4C364B57B48E2A74 /* Pods.xcconfig */,
 				6C6B704858CD41BFAF15A35E /* Frameworks */,
@@ -122,19 +122,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9744749719432B1E00718D0F /* lib */ = {
+		9744749719432B1E00718D0F /* PhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
-				971A143C19432BB800847D76 /* PhotoGridViewController.swift */,
-				971A143F194343F000847D76 /* PhotoGalleryDataSource.swift */,
-				971A14441943514D00847D76 /* PhotoGridCell.swift */,
-				971A14481943540200847D76 /* PhotoItem.swift */,
-				971A14531943583800847D76 /* SimplePhotoGalleryDataSource.swift */,
-				9718668C194385420055C1F9 /* objc-bridge.h */,
-				97E6BA9E19443F4300542BFD /* PhotoScrollPagerViewController.swift */,
-				97E6BAA019446C7600542BFD /* FullScreenPhotoView.swift */,
+				97CE76821944A5FE00B26CB8 /* FullScreenPhotoView.swift */,
+				97CE76831944A5FE00B26CB8 /* objc-bridge.h */,
+				97CE76841944A5FE00B26CB8 /* PhotoGalleryDataSource.swift */,
+				97CE76851944A5FE00B26CB8 /* PhotoGridCell.swift */,
+				97CE76861944A5FE00B26CB8 /* PhotoGridViewController.swift */,
+				97CE76871944A5FE00B26CB8 /* PhotoItem.swift */,
+				97CE76881944A5FE00B26CB8 /* PhotoScrollPagerViewController.swift */,
+				97CE76891944A5FE00B26CB8 /* SimplePhotoGalleryDataSource.swift */,
 			);
-			name = lib;
+			name = PhotoGallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,13 +196,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				971A14511943570800847D76 /* sky.jpeg in Resources */,
-				971A14501943570800847D76 /* evening.jpeg in Resources */,
-				971A144F1943570800847D76 /* beach.jpeg in Resources */,
+				97CE76981944A63D00B26CB8 /* evening.jpeg in Resources */,
+				97CE76971944A63D00B26CB8 /* beach2.jpeg in Resources */,
+				97CE76961944A63D00B26CB8 /* beach.jpeg in Resources */,
 				9744748019432AD300718D0F /* Main.storyboard in Resources */,
-				971A145719437E8E00847D76 /* beach2.jpeg in Resources */,
-				971A14521943570800847D76 /* sky2.jpeg in Resources */,
 				9744748219432AD300718D0F /* Images.xcassets in Resources */,
+				97CE769A1944A63D00B26CB8 /* sky2.jpeg in Resources */,
+				97CE76991944A63D00B26CB8 /* sky.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,15 +246,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				971A14491943540200847D76 /* PhotoItem.swift in Sources */,
-				971A1440194343F000847D76 /* PhotoGalleryDataSource.swift in Sources */,
+				97CE768E1944A5FE00B26CB8 /* PhotoItem.swift in Sources */,
+				97CE768B1944A5FE00B26CB8 /* PhotoGalleryDataSource.swift in Sources */,
 				9744747D19432AD300718D0F /* ViewController.swift in Sources */,
+				97CE768A1944A5FE00B26CB8 /* FullScreenPhotoView.swift in Sources */,
 				9744747B19432AD300718D0F /* AppDelegate.swift in Sources */,
-				97E6BAA119446C7600542BFD /* FullScreenPhotoView.swift in Sources */,
-				971A143D19432BB800847D76 /* PhotoGridViewController.swift in Sources */,
-				971A14541943583800847D76 /* SimplePhotoGalleryDataSource.swift in Sources */,
-				97E6BA9F19443F4300542BFD /* PhotoScrollPagerViewController.swift in Sources */,
-				971A14451943514D00847D76 /* PhotoGridCell.swift in Sources */,
+				97CE76901944A5FE00B26CB8 /* SimplePhotoGalleryDataSource.swift in Sources */,
+				97CE768C1944A5FE00B26CB8 /* PhotoGridCell.swift in Sources */,
+				97CE768F1944A5FE00B26CB8 /* PhotoScrollPagerViewController.swift in Sources */,
+				97CE768D1944A5FE00B26CB8 /* PhotoGridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +359,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/objc-bridge.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/PhotoGallery/objc-bridge.h";
 			};
 			name = Debug;
 		};
@@ -373,7 +373,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/objc-bridge.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/PhotoGallery/objc-bridge.h";
 			};
 			name = Release;
 		};
