@@ -54,7 +54,11 @@ class PhotoGridViewController : UICollectionViewController, UICollectionViewData
 
     override func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
         let grid = collectionView.dequeueReusableCellWithReuseIdentifier(ReuseIdentifier, forIndexPath:indexPath) as PhotoGridCell
-        grid.setPhoto(dataSource.itemForPhotoAtIndexPath(indexPath))
+        let photo = dataSource.itemForPhotoAtIndexPath(indexPath)
+        grid.photo = photo
+        if (!photo.localImage()) {
+            photo.startLoadingRemoteImageAndNotify()
+        }
         return grid
     }
 }

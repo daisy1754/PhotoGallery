@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8ADBE4E1DE429EBE67AB71 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9E134DE19B41F7B1D3EBB1 /* libPods.a */; };
 		971A143D19432BB800847D76 /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A143C19432BB800847D76 /* PhotoGridViewController.swift */; };
 		971A1440194343F000847D76 /* PhotoGalleryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A143F194343F000847D76 /* PhotoGalleryDataSource.swift */; };
 		971A14451943514D00847D76 /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A14441943514D00847D76 /* PhotoGridCell.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9718668C194385420055C1F9 /* objc-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-bridge.h"; sourceTree = "<group>"; };
 		971A143C19432BB800847D76 /* PhotoGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridViewController.swift; sourceTree = "<group>"; };
 		971A143F194343F000847D76 /* PhotoGalleryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryDataSource.swift; sourceTree = "<group>"; };
 		971A14441943514D00847D76 /* PhotoGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		9744747C19432AD300718D0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9744747F19432AD300718D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9744748119432AD300718D0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9FA60B6B4C364B57B48E2A74 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		CC9E134DE19B41F7B1D3EBB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +51,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8ADBE4E1DE429EBE67AB71 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C6B704858CD41BFAF15A35E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E134DE19B41F7B1D3EBB1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		971A144A194356F800847D76 /* img */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +84,8 @@
 				9744747719432AD300718D0F /* PhotoGalleryDemo */,
 				9744749719432B1E00718D0F /* lib */,
 				9744747619432AD300718D0F /* Products */,
+				9FA60B6B4C364B57B48E2A74 /* Pods.xcconfig */,
+				6C6B704858CD41BFAF15A35E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +126,7 @@
 				971A14441943514D00847D76 /* PhotoGridCell.swift */,
 				971A14481943540200847D76 /* PhotoItem.swift */,
 				971A14531943583800847D76 /* SimplePhotoGalleryDataSource.swift */,
+				9718668C194385420055C1F9 /* objc-bridge.h */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -122,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9744749119432AD300718D0F /* Build configuration list for PBXNativeTarget "PhotoGalleryDemo" */;
 			buildPhases = (
+				4549D998FEAF4916B9597757 /* Check Pods Manifest.lock */,
 				9744747119432AD300718D0F /* Sources */,
 				9744747219432AD300718D0F /* Frameworks */,
 				9744747319432AD300718D0F /* Resources */,
+				24EE08B5CD1A4261AB38A577 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +201,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24EE08B5CD1A4261AB38A577 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4549D998FEAF4916B9597757 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9744747119432AD300718D0F /* Sources */ = {
@@ -292,6 +343,7 @@
 		};
 		9744749219432AD300718D0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA60B6B4C364B57B48E2A74 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -299,11 +351,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/objc-bridge.h";
 			};
 			name = Debug;
 		};
 		9744749319432AD300718D0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA60B6B4C364B57B48E2A74 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -311,6 +365,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/objc-bridge.h";
 			};
 			name = Release;
 		};

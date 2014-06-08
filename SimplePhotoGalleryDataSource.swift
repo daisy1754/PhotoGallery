@@ -19,6 +19,8 @@ class SimplePhotoGalleryDataSource : PhotoGalleryDataSource {
     }
 
     func itemForPhotoAtIndexPath(indexPath: NSIndexPath!) -> PhotoItem {
+        NSLog("request \(indexPath.row)")
+        
         return PhotoItem(url: photos[indexPath.row])
     }
 }

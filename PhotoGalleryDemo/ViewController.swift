@@ -21,12 +21,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openGridView() {
+        // Images are from http://free.foto.ne.jp
         let dataSource = SimplePhotoGalleryDataSource(photos: [
             resourceImageUrlForName("beach", type: "jpeg"),
             resourceImageUrlForName("evening", type: "jpeg"),
             resourceImageUrlForName("sky", type: "jpeg"),
             resourceImageUrlForName("beach2", type: "jpeg"),
             resourceImageUrlForName("sky2", type: "jpeg"),
+            NSURL.URLWithString("https://dl.dropboxusercontent.com/u/5282183/photogallerysrc/coral.jpeg"),
+            NSURL.URLWithString("https://dl.dropboxusercontent.com/u/5282183/photogallerysrc/fireworks.jpeg"),
+            NSURL.URLWithString("https://dl.dropboxusercontent.com/u/5282183/photogallerysrc/in_the_sea.jpeg")
             ]);
         let photoGridController = PhotoGridViewController(dataSource: dataSource)
         let navigationController = UINavigationController(rootViewController:photoGridController)
