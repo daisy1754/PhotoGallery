@@ -47,6 +47,7 @@ class PhotoGridViewController : UICollectionViewController, UICollectionViewData
         self.collectionView.registerClass(PhotoGridCell.classForCoder(), forCellWithReuseIdentifier:ReuseIdentifier)
     }
 
+// Collection view data source
     override func collectionView(collectionView: UICollectionView!,
         numberOfItemsInSection section: Int) -> Int {
             return dataSource.numberOfPhotos()
@@ -60,5 +61,11 @@ class PhotoGridViewController : UICollectionViewController, UICollectionViewData
             photo.startLoadingRemoteImageAndNotify()
         }
         return grid
+    }
+
+// Collection view delegate
+    override func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
+        var photoViewController = PhotoScrollPagerViewController(dataSource: dataSource, currentIndex: indexPath.row)
+        self.navigationController.pushViewController(photoViewController, animated: true)
     }
 }
