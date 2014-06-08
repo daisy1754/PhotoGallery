@@ -12,8 +12,10 @@ import UIKit
 class PhotoScrollPagerViewController : UIViewController, UIScrollViewDelegate {
     let PhotoPadding: CGFloat = 10.0
     var dataSource: PhotoGalleryDataSource
+    var delegate: PhotoGalleryDelegate?
     var currentIndex: Int
     var photosScroll: UIScrollView = UIScrollView()
+    var toolbar = UIToolbar()
     var numOfPhotos: Int = -1
     var photosCache: PhotoItem?[] = []
     var visiblePages: FullScreenPhotoView[] = []
@@ -43,6 +45,11 @@ class PhotoScrollPagerViewController : UIViewController, UIScrollViewDelegate {
         photosScroll.contentSize = contentSizeForScrollView()
         self.view.addSubview(photosScroll)
 
+        toolbar.frame = frameForToolbarAtOrientation(self.interfaceOrientation)
+        toolbar.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleWidth
+        let actionButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: "actionButtonPressed:")
+        toolbar.items = [actionButton]
+        self.view.addSubview(toolbar)
         reloadData()
 
         super.viewDidLoad()
@@ -252,5 +259,22 @@ class PhotoScrollPagerViewController : UIViewController, UIScrollViewDelegate {
     func contentSizeForScrollView() -> CGSize {
         let bounds = photosScroll.bounds;
         return CGSizeMake(bounds.size.width * CGFloat(numberOfPhotos()), bounds.size.height);
+    }
+
+    func frameForToolbarAtOrientation(orientation: UIInterfaceOrientation) -> CGRect {
+        var height: CGFloat = 44;
+        if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Phone && UIInterfaceOrientationIsLandscape(orientation) {
+            height = 32
+        }
+        return CGRectMake(0, self.view.bounds.size.height - height, self.view.bounds.size.width, height);
+    }
+
+// Action button
+    func actionButtonPressed(sender: AnyObject) {
+        let photo = photoAtIndex(currentIndex)
+        if (photo && photo!.localImage()) {
+            let activityViewController = UIActivityViewController(activityItems:[photo!.localImage()!], applicationActivities: delegate?.uiActivitiesForSinglePhoto())
+            self.presentViewController(activityViewController, animated: false, completion: nil)
+        }
     }
 }

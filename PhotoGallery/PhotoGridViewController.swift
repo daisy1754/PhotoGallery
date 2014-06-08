@@ -25,7 +25,8 @@ struct PhotoGridDefaultSettings {
 
 class PhotoGridViewController : UICollectionViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     let ReuseIdentifier = "gridCell"
-    var dataSource : PhotoGalleryDataSource;
+    var dataSource : PhotoGalleryDataSource
+    var delegate: PhotoGalleryDelegate?
 
     convenience init(dataSource: PhotoGalleryDataSource) {
         let layout = UICollectionViewFlowLayout()
@@ -66,6 +67,7 @@ class PhotoGridViewController : UICollectionViewController, UICollectionViewData
 // Collection view delegate
     override func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
         var photoViewController = PhotoScrollPagerViewController(dataSource: dataSource, currentIndex: indexPath.row)
+        photoViewController.delegate = delegate
         self.navigationController.pushViewController(photoViewController, animated: true)
     }
 }

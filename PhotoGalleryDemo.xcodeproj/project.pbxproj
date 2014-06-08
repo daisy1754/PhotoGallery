@@ -24,6 +24,7 @@
 		97CE76981944A63D00B26CB8 /* evening.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97CE76931944A63D00B26CB8 /* evening.jpeg */; };
 		97CE76991944A63D00B26CB8 /* sky.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97CE76941944A63D00B26CB8 /* sky.jpeg */; };
 		97CE769A1944A63D00B26CB8 /* sky2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97CE76951944A63D00B26CB8 /* sky2.jpeg */; };
+		97CE769C1944B5AA00B26CB8 /* PhotoGalleryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE769B1944B5AA00B26CB8 /* PhotoGalleryDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		97CE76931944A63D00B26CB8 /* evening.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = evening.jpeg; path = img/evening.jpeg; sourceTree = "<group>"; };
 		97CE76941944A63D00B26CB8 /* sky.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sky.jpeg; path = img/sky.jpeg; sourceTree = "<group>"; };
 		97CE76951944A63D00B26CB8 /* sky2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sky2.jpeg; path = img/sky2.jpeg; sourceTree = "<group>"; };
+		97CE769B1944B5AA00B26CB8 /* PhotoGalleryDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryDelegate.swift; sourceTree = "<group>"; };
 		9FA60B6B4C364B57B48E2A74 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CC9E134DE19B41F7B1D3EBB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				97CE76821944A5FE00B26CB8 /* FullScreenPhotoView.swift */,
 				97CE76831944A5FE00B26CB8 /* objc-bridge.h */,
 				97CE76841944A5FE00B26CB8 /* PhotoGalleryDataSource.swift */,
+				97CE769B1944B5AA00B26CB8 /* PhotoGalleryDelegate.swift */,
 				97CE76851944A5FE00B26CB8 /* PhotoGridCell.swift */,
 				97CE76861944A5FE00B26CB8 /* PhotoGridViewController.swift */,
 				97CE76871944A5FE00B26CB8 /* PhotoItem.swift */,
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97CE769C1944B5AA00B26CB8 /* PhotoGalleryDelegate.swift in Sources */,
 				97CE768E1944A5FE00B26CB8 /* PhotoItem.swift in Sources */,
 				97CE768B1944A5FE00B26CB8 /* PhotoGalleryDataSource.swift in Sources */,
 				9744747D19432AD300718D0F /* ViewController.swift in Sources */,
