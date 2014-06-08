@@ -103,6 +103,7 @@ class PhotoScrollPagerViewController : UIViewController, UIScrollViewDelegate {
         recycledPages = []
         photosScroll.contentOffset = contentOffsetForPageAtIndex(currentIndex)
         layoutPages()
+        updateTitle()
     }
 
     func layoutPages() {
@@ -207,6 +208,14 @@ class PhotoScrollPagerViewController : UIViewController, UIScrollViewDelegate {
         }
     }
 
+    func updateTitle() {
+        if (numberOfPhotos() > 0) {
+            self.title = "\(currentIndex + 1) of \(numberOfPhotos())"
+        } else {
+            self.title = ""
+        }
+    }
+
 // UIScrollViewDelegate
     func scrollViewDidScroll(scrollView: UIScrollView) {
         layoutPages()
@@ -221,6 +230,9 @@ class PhotoScrollPagerViewController : UIViewController, UIScrollViewDelegate {
         }
     }
 
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        updateTitle()
+    }
 
 // Frame or position calculations
     func frameForScrollView() -> CGRect {
